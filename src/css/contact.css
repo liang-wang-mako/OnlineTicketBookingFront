@@ -1,0 +1,60 @@
+.contact-header {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact-header>* {
+	height: 575px;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.form {
+	max-width: 794px;
+}
+
+.form label {
+	font-size: 1rem;
+}
+
+.form-control,
+.form-select {
+	padding: 0.8rem 0.75rem;
+}
+
+input[type=checkbox] {
+	accent-color: green;
+}
+
+.submit-btn,
+.submit-btn:hover {
+	color: white !important;
+	text-wrap: nowrap;
+	margin: auto;
+	padding: 0.67rem 1.4rem;
+}
+
+.form-check-input,
+.form-check-label {
+	cursor: pointer;
+}
+
+.history {
+	border: 1px solid;
+	max-width: 770px;
+	margin: auto;
+	padding: 14px;
+}
+
+.history p {
+	font-size: 1rem;
+	line-height: 1.57rem;
+}
+
+@media screen and (max-width: 576px) {
+	.call-info {
+		border-bottom: 2px solid;
+	}
+}

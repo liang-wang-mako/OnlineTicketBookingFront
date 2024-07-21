@@ -1,0 +1,152 @@
+.upcoming-header {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.upcoming-header > * {
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-btn {
+	--bs-btn-padding-y: .25rem; 
+	--bs-btn-padding-x: .5rem; 
+	--bs-btn-font-size: .75rem;
+	color: black!important;
+    opacity: 1!important;
+    background-color: #eeeeee!important;
+    border-color: transparent!important;
+}
+.filter-all-btn {
+    --bs-btn-padding-y: 0.7rem;
+    --bs-btn-padding-x: 1.4rem;
+	--bs-btn-font-size: 1rem;
+	color: #0DB3F6!important;
+	border-color: black!important;
+    opacity: 1!important;
+    background-color: transparent!important;
+}
+
+.tour-item {
+    margin-top: 11px;
+    display: none;
+}
+
+.tour-item.more {
+   	display: none;
+}
+
+.tour-item.active:not(.more) {
+   	display: block;
+}
+
+.tour-item-header {
+	background-color: #074B85;
+	color: white;
+}
+@media screen and (max-width: 992px) {
+	.tour-item-header {
+		font-size: 1.4rem!important;
+	}
+}
+
+.price-title {
+	color: #0795D0;
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+}
+.price {
+	color: #DA3348;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+.enquiring, .enquiring:hover {
+	color: white!important;
+	background-color: #30A44C!important;
+	text-wrap: nowrap;
+}
+
+.enquiring, .enquiring:hover {
+	color: white!important;
+	background-color: #30A44C!important;
+	text-wrap: nowrap;
+}
+
+
+.tour-image {
+	margin-top: -92px;
+}
+
+.tour-image img {
+	width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+	.tour-image {
+		margin-top: 0;
+	}
+	.enquiring, .enquiring:hover {
+		font-size: 20px!important;
+	}
+	.price-title {
+		font-size: 26px!important;
+	}
+	.price {
+		font-size: 26px!important;
+	}
+}
+.more-btn {
+	color: #0DB3F6;
+	cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+	.tour-feature {
+		border: 1px solid;
+		height: 100%;
+	}
+	.tour-content {
+		margin-bottom: 3rem!important;
+	}
+
+}
+@media screen and (max-width: 576px) {
+
+	.tour-content {
+		margin-bottom: 1.6rem!important;
+	}
+
+}
+@media screen and (max-width: 1400px) {
+	.tour-info .mt-4{
+		margin-top: 1.2rem!important;
+	}
+
+	.price-title {
+		margin-bottom: 0;
+		padding-top: 0;
+	}
+	.price {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.tour-info .mt-4 {
+		margin-top: 0rem!important;
+	}
+	.tour-info .fs-4 {
+		margin-bottom: 0.5rem!important;
+	}
+
+	.price-title {
+		margin-bottom: 0;
+		padding-top: 0;
+	}
+	.price {
+		padding-top: 0.9rem;
+		padding-bottom: 0.9rem;
+	}
+}

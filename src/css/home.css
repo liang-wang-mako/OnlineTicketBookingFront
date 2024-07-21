@@ -1,0 +1,55 @@
+.process-h1{
+    font-size: 3.1rem;
+    font-weight: 700;	
+}
+
+.icon-link {
+	font-size: 1rem;
+	
+}
+.home-feature .icon-link {
+	position: absolute;
+    bottom: 0;
+    margin-bottom: -1.5rem;
+}
+.home-feature .feature > div {
+	border: 1px solid;
+    height: 100%;
+}
+.feature-icon {
+	width: 100%;
+}
+
+.feature-icon img {
+	width: 100%;
+}
+.actions-group {
+	display: flex;
+    align-items: center;
+	margin-top: 14px;
+}
+.actions-group a:first-child {
+	margin-right: 30px;
+}
+.actions-group i {
+	color: #494343!important;
+}
+.actions-group .btn {
+	background-color: #494343!important;
+}
+.icon-link i {
+	margin-top: -6px;
+}
+@media screen and (max-width: 992px) {
+	.home-content{
+		border: none!important;
+	}
+}
+
+.feature {
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+.feature h3 {
+	color: #494343!important;
+}

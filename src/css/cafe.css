@@ -1,0 +1,20 @@
+.cafe-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cafe-header>* {
+    height: 485px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cafe-content {
+    max-width: 790px;
+}
+
+.cafe-content p {
+    line-height: 2.1rem;
+}

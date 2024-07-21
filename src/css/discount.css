@@ -1,0 +1,63 @@
+.discount-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discount-header>* {
+    height: 525px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #6092d2;
+}
+
+.discount-content {
+    max-width: 1000px;
+}
+
+.discount-table {
+    border: 1px solid;
+    border-left-width: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.discount-table td,
+.discount-table th {
+    padding: 1.4rem;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    font-size: 1rem;
+}
+.discount-table .th {
+    padding: 0.5rem 1.4rem;
+}
+.discount-table td:not(:first-child),
+.discount-table th:not(:first-child) {
+    border-left-width: 0;
+}
+
+.discount-table tbody:first-child tr:first-child td,
+.discount-table thead:first-child tr:first-child th {
+    border-top-width: 0;
+}
+
+.discount-table thead:first-child tr:first-child td:first-child,
+.discount-table thead:first-child tr:first-child th:first-child {
+    border-top-left-radius: 1rem;
+}
+
+.discount-table tbody:last-child tr:last-child td:first-child,
+.discount-table tbody:last-child tr:last-child th:first-child {
+    border-bottom-left-radius: 1rem;
+}
+.tandc {
+    font-size: 1.2rem;
+    margin: 0;
+    padding-left: 2.5rem;
+}

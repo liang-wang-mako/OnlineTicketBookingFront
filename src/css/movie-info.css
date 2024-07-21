@@ -1,0 +1,50 @@
+.movie-info-header {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.movie-info-header > * {
+    height: 600px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.movie-info-bk {
+    background-color: #252525;
+}
+@media screen and (max-width: 1310px) {
+	.movie-info-bk {
+        background-color: #2c2d2e;
+	}
+}
+.movie-info-inner {
+    background-color: #2c2d2e;
+}
+.movie-info-container {
+    max-width: 1310px;
+}
+.table-wrapper {
+    margin-right: calc(var(--bs-gutter-x)* -0.5);
+    margin-left: calc(var(--bs-gutter-x)* -0.5);
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+}
+.table {
+    font-size: 1.2rem;
+ 
+}
+
+.table thead .th {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.table tbody .td,
+.table thead .td {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.table tbody .td:last-child {
+    width: 60px;
+}
