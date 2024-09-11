@@ -100,8 +100,10 @@ export const sendBookingEmail = (movieId, formData) => {
   }
 }
 
-//This function is used to save the booking
-//details and update the seat availability
+//This function is used to post the booking
+//details to the /api/booking web api on the server,
+//which will save the booking detail to the bookings.json
+//file in the data folder on the server, and update the seat availability
 export const submitBookingAsync = async (movieId, formData) => {
 
   //Prepare data

@@ -15,6 +15,8 @@ function App() {
   return (
     <BrowserRouter>
       <header className="bg-dark">
+        
+        {/* The Header component contains the navigation menu */}
         <Header />
       </header>
 

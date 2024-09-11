@@ -22,16 +22,20 @@ export default function BookingForm(props) {
     waitangiDay: false,
   })
 
-  //Declare a errors state to store the validation errors
+  //Declare the errors state to store the validation errors
   const [errors, setErrors] = useState({})
+
+  //Read out the screenId in the state as the
+  //default selected screenId in the booking form
 
   //Dispatch the new selected screen to update
   //the screenId in the global state of the store
   const {state, dispatch } = useContext(Store)
 
-  
+  //Get the screenTimes list for the movie
   const screenTimes = helper.getMovieScreenTimes(props.movieId)
 
+  //Set the default screen for the formData state
   useEffect(() => {
     if (state.screenId !== 0) {
       const screenTime = screenTimes.find((s) => s.id === state.screenId)
@@ -44,7 +48,7 @@ export default function BookingForm(props) {
   }, [])
 
 
-  //When a form field is changed, this handler will be fired
+  //Handler all the field changes
   const handleChange = (e) => {
     const { type, name, value, checked } = e.target
 
@@ -87,6 +91,7 @@ export default function BookingForm(props) {
   }
 
   //This function is to validate the booking form
+  //All the fields of the form are required except all the check boxes
   const validation = (data) => {
     const errors = {}
 
@@ -119,6 +124,7 @@ export default function BookingForm(props) {
     return errors
   }
 
+  //Handle the form submission
   const handleSubmit = async (event) => {
 
     event.preventDefault()

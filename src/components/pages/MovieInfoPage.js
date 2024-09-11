@@ -10,6 +10,8 @@ export default function MovieInfoPage() {
     <>
       <MovieInfoBanner movieId={movieid} />
       
+      {/* The MovieInfo component contains the movie detail
+      information and the MovieSchedule component  */}
       <MovieInfo movieId={movieid} />
          
     </>

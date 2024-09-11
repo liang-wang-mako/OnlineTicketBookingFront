@@ -2,6 +2,8 @@ import { useState } from 'react'
 import axios from 'axios'
 
 export default function ContactUsForm() {
+
+  //Declare the formData state to bound it's properties to the ContactUs form fields
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -11,8 +13,11 @@ export default function ContactUsForm() {
     message: '',
   })
 
+  //Declare the errors state to save
+  //the errors when validate the form
   const [errors, setErrors] = useState({})
 
+  //Handle all the form field changes
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData({
@@ -21,6 +26,7 @@ export default function ContactUsForm() {
     })
   }
 
+  //This function is used to validate the form
   const validation = (data) => {
     const errors = {}
 
@@ -49,12 +55,14 @@ export default function ContactUsForm() {
     return errors
   }
 
+  //Handle the form submission event
   const handleSubmit = async (event) => {
     event.preventDefault()
     const newErrors = validation(formData)
     setErrors(newErrors)
     if (Object.keys(newErrors).length === 0) {
-      //Save the contact us record to the contactus.json file in the server/data folder
+
+      //Post the contact us record to the /api/contactus web api on the server
       await axios
         .post('/api/contactus', formData)
         .then((response) => alert(response.data))

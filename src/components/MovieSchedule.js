@@ -5,7 +5,7 @@ import { Store } from '../store'
 
 export default function MovieSchedule(props) {
   const screenTimes = helper.getMovieScreenTimes(props.movieId)
-  const { state, dispatch } = useContext(Store)
+  const {dispatch } = useContext(Store)
 
   const navigate = useNavigate()
   const handleOnClick = (id) => {
