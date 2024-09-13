@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
 export default function Header() {
-
   const [active, setActive] = useState('')
   const handleClick = (event) => {
     if (event.target.id === '0') {
@@ -16,7 +15,10 @@ export default function Header() {
   }
 
   return (
-    <Navbar expand="lg" className="container-xl container-fluid">
+    <Navbar
+      expand="lg"
+      className="container-xl container-fluid"
+    >
       <Container className="container-xl container-fluid">
         <nav
           class="navbar navbar-expand-sm container-fluid"
@@ -31,7 +33,9 @@ export default function Header() {
               class="d-flex align-items-center mb-md-0 me-auto link-body-emphasis text-decoration-none"
             >
               <img
-                src="/images/logo/logo.png"
+                src="./images/logo/logo.png"
+                // src={`url("images/log/logo.png")`}
+                // src="./images/logo/Logo.png"
                 alt="logo"
               />
             </Link>
@@ -45,10 +49,11 @@ export default function Header() {
                       id="1"
                       onClick={handleClick}
                       to="/"
-                      class={`nav-link link-body-emphasis px-3 ${window.location.pathname.length === 1 || active === '1'
-                        ? 'link-active'
-                        : ''
-                        }`}
+                      class={`nav-link link-body-emphasis px-3 ${
+                        window.location.pathname.length === 1 || active === '1'
+                          ? 'link-active'
+                          : ''
+                      }`}
                     >
                       Home
                     </Link>
@@ -59,11 +64,12 @@ export default function Header() {
                       id="2"
                       onClick={handleClick}
                       to="/upcomingmovies"
-                      class={`nav-link link-body-emphasis px-3 ${window.location.pathname.includes('upcomingmovies') ||
+                      class={`nav-link link-body-emphasis px-3 ${
+                        window.location.pathname.includes('upcomingmovies') ||
                         active === '2'
-                        ? 'link-active'
-                        : ''
-                        }`}
+                          ? 'link-active'
+                          : ''
+                      }`}
                     >
                       Upcoming Movies
                     </Link>
@@ -74,11 +80,12 @@ export default function Header() {
                       id="3"
                       onClick={handleClick}
                       to="discount"
-                      class={`nav-link link-body-emphasis px-3 ${window.location.pathname.includes('discount') ||
+                      class={`nav-link link-body-emphasis px-3 ${
+                        window.location.pathname.includes('discount') ||
                         active === '3'
-                        ? 'link-active'
-                        : ''
-                        }`}
+                          ? 'link-active'
+                          : ''
+                      }`}
                     >
                       Discount
                     </Link>
@@ -89,11 +96,12 @@ export default function Header() {
                       id="4"
                       onClick={handleClick}
                       to="cafemenu"
-                      class={`nav-link link-body-emphasis px-3 ${window.location.pathname.includes('cafemenu') ||
+                      class={`nav-link link-body-emphasis px-3 ${
+                        window.location.pathname.includes('cafemenu') ||
                         active === '4'
-                        ? 'link-active'
-                        : ''
-                        }`}
+                          ? 'link-active'
+                          : ''
+                      }`}
                     >
                       Cafe Menu
                     </Link>
@@ -104,11 +112,12 @@ export default function Header() {
                       id="5"
                       onClick={handleClick}
                       to="contactus"
-                      class={`nav-link link-body-emphasis px-3 ${window.location.pathname.includes('contactus') ||
+                      class={`nav-link link-body-emphasis px-3 ${
+                        window.location.pathname.includes('contactus') ||
                         active === '5'
-                        ? 'link-active'
-                        : ''
-                        }`}
+                          ? 'link-active'
+                          : ''
+                      }`}
                     >
                       Contact Us
                     </Link>
@@ -119,6 +128,6 @@ export default function Header() {
           </div>
         </nav>
       </Container>
-    </Navbar >
+    </Navbar>
   )
 }
