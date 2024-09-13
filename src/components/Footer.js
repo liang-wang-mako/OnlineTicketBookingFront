@@ -1,5 +1,3 @@
-
-
 export default function Footer() {
   return (
     <div class="container">
@@ -12,7 +10,7 @@ export default function Footer() {
         <ul class="nav col-md-5 justify-content-end">
           <li class="nav-item">
             <a
-              href="#"
+              href="/contactus"
               class="nav-link px-1 text-light fs-6 mt-3 mb-md-0"
             >
               Privacy Policy
@@ -20,7 +18,7 @@ export default function Footer() {
           </li>
           <li class="nav-item">
             <a
-              href="#"
+              href="/contactus"
               class="nav-link px-1 text-light fs-6 mt-3 mb-md-0"
             >
               Terms of Service
@@ -28,7 +26,7 @@ export default function Footer() {
           </li>
           <li class="nav-item">
             <a
-              href="#"
+              href="/contactus"
               class="nav-link px-1 text-light fs-6 mt-3 mb-md-0"
             >
               Cookies Settings

@@ -30,23 +30,26 @@ export default function BookingForm(props) {
 
   //Dispatch the new selected screen to update
   //the screenId in the global state of the store
-  const {state, dispatch } = useContext(Store)
+  const { state, dispatch } = useContext(Store)
 
   //Get the screenTimes list for the movie
   const screenTimes = helper.getMovieScreenTimes(props.movieId)
+  const screenTime = screenTimes.find((s) => s.id === state.screenId)
 
   //Set the default screen for the formData state
   useEffect(() => {
     if (state.screenId !== 0) {
-      const screenTime = screenTimes.find((s) => s.id === state.screenId)
       setFormData({
         ...formData,
         screen: state.screenId.toString(),
         seats: screenTime.seats,
       })
     }
-  }, [formData, state.screenId])
-
+  }, [
+    formData,
+    state.screenId,
+    screenTime,
+  ])
 
   //Handler all the field changes
   const handleChange = (e) => {
@@ -126,7 +129,6 @@ export default function BookingForm(props) {
 
   //Handle the form submission
   const handleSubmit = async (event) => {
-
     event.preventDefault()
 
     const newErrors = validation(formData)
@@ -134,21 +136,17 @@ export default function BookingForm(props) {
     setErrors(newErrors)
 
     if (Object.keys(newErrors).length === 0) {
-
       //Submit the booking details and
-      //update the seats availability 
+      //update the seats availability
       await helper.submitBookingAsync(props.movieId, formData)
 
       //Send book confirmation to the customer
       helper.sendBookingEmail(props.movieId, formData)
-
-     
     } else {
       alert(`Form submission failed
              due to validation errors.`)
     }
   }
-
 
   return (
     <>
