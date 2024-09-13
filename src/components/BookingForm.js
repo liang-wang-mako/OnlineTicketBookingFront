@@ -45,7 +45,7 @@ export default function BookingForm(props) {
         seats: screenTime.seats,
       })
     }
-  }, [])
+  }, [formData, state.screenId])
 
 
   //Handler all the field changes
