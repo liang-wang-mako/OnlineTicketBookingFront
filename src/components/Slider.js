@@ -12,7 +12,7 @@ export default function Slider() {
             alt="Hero1"
             className="d-block w-100"
             // src="/images/Hero/Hero1.jpg"
-            src={`./images/Hero/Hero1.jpg`}
+            src={`../images/Hero/Hero1.jpg`}
             //src={`url("images/Hero/Hero1.jpg")`}
           />
         </Carousel.Item>
@@ -20,7 +20,7 @@ export default function Slider() {
           <img
             alt="Hero2"
             className="d-block w-100"
-            src="./images/Hero/Hero2.jpg"
+            src="../images/Hero/Hero2.jpg"
             //src={`url("images/Hero/Hero2.jpg")`}
           />
         </Carousel.Item>
@@ -28,7 +28,7 @@ export default function Slider() {
           <img
             alt="Hero3"
             className="d-block w-100"
-            src="./images/Hero/Hero3.jpg"
+            src="../images/Hero/Hero3.jpg"
 
             // src={`url("images/Hero/Hero3.jpg")`}
           />
@@ -39,7 +39,7 @@ export default function Slider() {
             className="d-block w-100"
             // src="/images/Hero/Hero4.jpg"
 
-            src={`./images/Hero/Hero4.jpg`}
+            src={`../images/Hero/Hero4.jpg`}
             //  src={`url("images/Hero/Hero4.jpg")`}
           />
         </Carousel.Item>

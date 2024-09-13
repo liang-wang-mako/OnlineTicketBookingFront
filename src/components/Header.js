@@ -33,7 +33,7 @@ export default function Header() {
               class="d-flex align-items-center mb-md-0 me-auto link-body-emphasis text-decoration-none"
             >
               <img
-                src="./images/logo/logo.png"
+                src="../images/logo/logo.png"
                 // src={`url("images/log/logo.png")`}
                 // src="./images/logo/Logo.png"
                 alt="logo"
